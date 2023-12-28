@@ -1,0 +1,205 @@
+.profile_container {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 79%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile_user_detail {
+    width: 80%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid rgb(66, 65, 65);
+}
+
+
+
+.profile_user_img {
+    background-color: #fff;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-image: url("./userDfaultImage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.profile_user_img>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.profile_user_info {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.profile_user_info_top {
+    display: flex;
+    align-items: center;
+}
+
+.pro_user_name {
+    color: #fff;
+    font-size: 20px;
+    font-family: cursive;
+    margin-top: 10px;
+}
+
+
+.pro_user_form {
+    display: flex;
+    height: 50px;
+}
+
+.custom-file-upload {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    flex-direction: row;
+    background-color: rgb(76, 76, 76);
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.custom-file-p {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.pro_user_form>button {
+    background-color: rgb(76, 76, 76);
+    height: 50px;
+    border: none;
+    outline: none;
+    margin: 0px 20px;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 10px;
+    padding: 7px 13px;
+    cursor: pointer;
+}
+
+.pro_user_form>button:hover,
+.custom-file-upload:hover {
+    background-color: rgb(65, 64, 64);
+}
+
+.custom-file-upload input[type="file"] {
+    display: none;
+}
+
+.profile_user_info>button:hover {
+    background-color: rgb(65, 64, 64);
+}
+
+.pro_user_setting {
+    color: #fff;
+    font-size: 23px;
+    margin-top: 10px;
+}
+
+.profile_user_info_bottom {
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.profile_followes {
+    color: #fff;
+    margin: 0px 25px 0px 0px;
+    font-family: cursive;
+}
+
+.profile_user_uploads {
+    margin: 10px 0px;
+    width: 50%;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pro_uploads {
+    color: #fff;
+    font-size: 12px;
+    font-family: cursive;
+}
+
+.profile_link {
+    text-decoration: none;
+}
+
+@media(max-width: 1000px) {
+    .profile_container {
+        width: 100%;
+        height: 90%;
+    }
+
+    .profile_user_img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media(max-width: 650px) {
+    .profile_user_img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media(max-width: 450px) {
+    .profile_user_detail {
+        width: 95%;
+    }
+    .profile_user_info{
+        width: 75%;
+    }
+    .custom-file-upload {
+        width: 60px;
+        height: 35px;
+        border-radius: 7px;
+        padding: 1px 4px;
+    }
+    .pro_user_setting{
+        display: none;
+    }
+    .custom-file-p {
+        font-size: 11px;
+    }
+
+    .pro_user_form>button {
+        height: 35px;
+        font-size: 11px;
+        border-radius: 7px;
+        padding: 4px 9px;
+    }
+
+    .pro_user_setting {
+        font-size: 15px;
+        margin: auto;
+    }
+
+    .profile_user_uploads {
+        width: 80%;
+    }
+    .pro_user_name{
+        max-width: 100px;
+    }
+}

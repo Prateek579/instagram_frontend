@@ -1,0 +1,65 @@
+.reel_content {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 79%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reel_cards {
+    height: 90%;
+    width: 90%;
+    overflow: scroll;
+}
+
+.reel_cards::-webkit-scrollbar {
+    width: 0px !important;
+    display: none;
+}
+
+.reel_card {
+    background-color: rgb(66, 65, 65);
+    border-radius: 10px;
+    height: 90%;
+    width: 40%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reels_card_video {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media(max-width: 1000px) {
+    .reel_content {
+        height: 90%;
+        width: 95%;
+    }
+
+    .reel_card {
+        border-radius: 10px;
+        height: 90%;
+        width: 45%;
+    }
+}
+
+@media(max-width: 400px) {
+    .reel_content{
+        width: 100%;
+    }
+    .reel_cards {
+        width: 100%;
+        height: 99%;
+    }
+
+    .reel_card {
+        height: 90%;
+        width: 100%;
+    }
+}

@@ -1,0 +1,113 @@
+.post_container{
+    height: 67%;
+    width: 80%;
+}
+
+.post_cards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+
+.post_cards::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+}
+
+.post_card{
+    background-color:#424141;
+    width: 280px;
+    height: 340px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.post_card>img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.post_card_delete{
+    color: black;
+    background-color: #fff;
+    bottom: 5px;
+    right: 5px;
+    font-size: 25px;
+    position: absolute;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.post_card:hover .post_card_delete{
+    display: block;
+    border: 3px solid #222;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.post_card_form{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post_card_label{
+    border:3px solid #1c1e21;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.post_card_label input[type="file"] {
+    display: none;
+}
+
+.post_card_upload{
+    margin-top: 10px;
+    background-color:rgb(49, 49, 49) ;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 10px;
+    padding: 7px 20px;
+    cursor: pointer;
+}
+
+.post_card_upload:hover, .post_card_label:hover{
+    background-color: rgb(115, 115, 115);
+}
+
+@media(max-width: 650px){
+    .post_card{
+        width: 200px;
+        height: 160px;
+    }
+}
+@media(max-width: 450px){
+    .post_card{
+        width: 140px;
+        height: 170px;
+    }
+    .post_container{
+        width: 90%;
+    }    
+}

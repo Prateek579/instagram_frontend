@@ -1,0 +1,30 @@
+.alert_container{
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    background-color: rgb(123, 138, 160);
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.alert_message{
+    display: flex;
+    align-items: center;
+    margin: 8px 20px;
+    color: #fff;
+    font-size: 20px;
+    width: 70%;
+}
+
+.alert_message>p{
+    margin-left: 20px;
+}
+
+@media(max-width: 400px){
+    .alert_message{
+        width: 98%;
+        font-size: 13px;
+        margin: auto;
+    }
+}

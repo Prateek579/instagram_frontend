@@ -1,0 +1,69 @@
+.explore_container{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 79%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore_images{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+}
+
+.explore_images::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+}
+
+.explore_image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 330px;
+    width: 300px;
+    margin: 5px;
+    background-color: rgb(66, 65, 65);
+}
+
+.explore_image>img{
+    width: 100%;
+    max-height: 100%;
+}
+
+@media(max-width: 1000px){
+    .explore_container{
+        height: 90%;
+        width: 100%;
+    }   
+    .explore_images{
+        width: 95%;
+        height: 97%;
+    }
+    .explore_image{
+        height: 250px;
+        width: 230px;
+    }
+}
+
+@media(max-width: 550px){
+    .explore_image{
+        height: 150px;
+        width: 130px;
+    }
+}
+
+@media(max-width: 400px){
+    .explore_images{
+        height: 100%;
+        width: 100%;
+    }
+}

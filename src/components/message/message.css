@@ -1,0 +1,245 @@
+.message_container {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 79%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.message_contacts {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    border-right: 2px solid rgb(49, 49, 49);
+    overflow-y: scroll;
+}
+
+.message_contacts::-webkit-scrollbar {
+    width: 0px !important;
+    display: none;
+}
+
+.message_card {
+    width: 90%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message_card:hover {
+    background-color: rgb(65, 64, 64);
+}
+
+.active_background {
+    background-color: rgb(65, 64, 64);
+}
+
+.message_user_image {
+    display: flex;
+    align-items: center;
+}
+
+.message_user_image>img {
+    height: 60px;
+    width: 60px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.message_user_details {
+    height: 100%;
+}
+
+.message_user_details>p {
+    color: #d1cfcf;
+    margin-left: 15px;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.message_container_right {
+    width: 68%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.message_per {
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid rgb(65, 64, 64);
+}
+
+.message_per_details {
+    display: flex;
+    align-items: center;
+    margin: 7px 0px;
+}
+
+.message_per_details>p {
+    color: #fff;
+}
+
+.message_per_details>img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0px 20px;
+}
+
+.message_content {
+    width: 95%;
+    height: 78%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.message_content::-webkit-scrollbar {
+    width: 0px !important;
+    display: none;
+}
+
+.message_sender {
+    display: flex;
+    justify-content: end;
+    border-radius: 50px;
+}
+
+.message_sender>p {
+    background-color: aqua;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-family: cursive;
+}
+
+.message_reciver {
+    display: flex;
+}
+
+.message_reciver>p {
+    background-color: aqua;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-family: cursive;
+}
+
+.message_input {
+    width: 90%;
+    position: absolute;
+    bottom: 20px;
+    border-radius: 25px;
+    border: 1px solid rgb(179, 177, 177);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+}
+
+.message_input>input {
+    width: 65%;
+    margin: 7px 0px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    background: transparent;
+    font-family: cursive;
+}
+
+.message_input>i:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+@media(max-width: 1000px) {
+    .message_container {
+        height: 90%;
+        width: 100%;
+    }
+
+    .message_contacts {
+        width: 20%;
+    }
+
+    .message_user_image>img {
+        height: 50px;
+        width: 50px;
+
+    }
+
+    .message_container_right {
+        width: 78%;
+    }
+
+    .message_input {
+        bottom: 10px;
+    }
+
+    .message_input>input {
+        width: 70%;
+        margin: 4px 0px;
+        font-size: 12px;
+    }
+
+    .message_user_details>p {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 650px) {
+    .message_user_image>img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .message_card {
+        height: 50px;
+    }
+}
+
+@media(max-width: 450px) {
+    .message_card {
+        margin: 10px 0px;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .message_user_details>p{
+        margin: auto;
+    }
+    .message_user_image {
+        flex-direction: column;
+    }
+
+    .message_user_image>img {
+        margin: 0px;
+    }
+
+    .message_per_details>img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .message_sender>p,
+    .message_reciver>p {
+        padding: 3px 10px;
+        font-size: 12px;
+    }
+}

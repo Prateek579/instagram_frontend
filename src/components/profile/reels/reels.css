@@ -1,0 +1,107 @@
+.reels_container{
+    color: #fff;
+    height: 67%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reels_items{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+
+.reels_items::-webkit-scrollbar{
+    width: 0px !important;
+    display: none;
+}
+
+.reels_item{
+    background-color:#424141;
+    height: 300px;
+    width: 350px;
+    border-radius: 10px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.reels_item_video{
+    max-height: 100%;
+    max-width: 100%;
+}  
+
+.reels_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.reels_form_label{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:3px solid #1c1e21;
+    cursor: pointer;
+}
+
+.reels_form_label:hover{
+    opacity: 0.8;
+}
+
+.reels_form_label input[type="file"]{
+    display: none;
+}
+
+.reels_form_btn>button{
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    background-color: #1c1e21;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.reels_form_btn>button:hover{
+    opacity: 0.8;
+}
+
+.reels_item_bottom{
+    border: 2px solid #1c1e21;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.reels_item_bottom:hover{
+    background-color: #fff;
+    color: #1c1e21;
+}
+
+@media(max-width: 450px){
+    .reels_item{
+        height: 250px;
+        width: 300px;
+    }
+}
